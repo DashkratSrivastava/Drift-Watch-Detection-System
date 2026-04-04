@@ -1,13 +1,13 @@
-# 📊 DriftWatch – Data Drift Detection System
+# DriftWatch – Data Drift Detection System
 
-## 📌 Overview
+## Overview
 **DriftWatch** is a data monitoring system designed to detect **data drift** in machine learning pipelines. It compares incoming data with training data to identify changes in statistical distributions that may affect model performance.
 
 Instead of focusing only on model accuracy, DriftWatch emphasizes **post-deployment monitoring**, which is critical in real-world AI systems.
 
 ---
 
-## 🎯 Objective
+## Objective
 The main goal of this project is to:
 
 - Detect distribution changes in incoming data  
@@ -32,7 +32,7 @@ The main goal of this project is to:
 
 ---
 
-## 🧠 Key Concepts
+## Key Concepts
 
 ### Data Drift
 Data drift occurs when the statistical properties of incoming data differ from the training data, leading to degraded model performance.
@@ -46,9 +46,9 @@ Data drift occurs when the statistical properties of incoming data differ from t
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
-
+```text
 User Input (CSV)
 ↓
 Data Ingestion & Preprocessing
@@ -60,7 +60,7 @@ Feature-wise Drift Calculation
 Drift Aggregation Engine
 ↓
 Visualization Dashboard
-
+```
 
 ---
 
@@ -81,17 +81,7 @@ Visualization Dashboard
 
 ---
 
-## 📊 Example Output
-
-| Metric                | Value         |
-|----------------------|--------------|
-| Overall Drift Score  | 1.35         |
-| Status               | Medium Drift |
-| Top Feature          | Age          |
-
----
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component     | Technology Used         |
 |---------------|------------------------|
@@ -102,16 +92,16 @@ Visualization Dashboard
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
-
+```text
 DriftWatch/
 │
 ├── app.py # Streamlit frontend
 ├── backend.py # Drift detection logic
 ├── dataset.csv # Sample dataset
 ├── README.md # Project documentation
-
+```
 
 ---
 
@@ -120,19 +110,17 @@ DriftWatch/
 ### 1. Install dependencies
 ```bash
 pip install streamlit pandas numpy matplotlib
-2. Run the application
+```
+### 2. Run the application
+```bash
 streamlit run app.py
-3. Open in browser
-http://localhost:8501
-⚠️ Limitations
-Uses simulated drift instead of real-time streaming data
-Focuses primarily on numerical features
-Does not automatically retrain models
-🔮 Future Enhancements
+```
+
+## Future Enhancements
 Real-time data monitoring
 Integration with ML pipelines
 Support for categorical drift (Chi-square test)
 Automated model retraining triggers
-📌 Conclusion
 
+## Conclusion
 DriftWatch demonstrates the importance of monitoring data after deployment. By detecting early signs of drift, it helps maintain model reliability and supports better decision-making in production systems.
