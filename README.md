@@ -124,3 +124,6 @@ Automated model retraining triggers
 
 ## Conclusion
 DriftWatch demonstrates the importance of monitoring data after deployment. By detecting early signs of drift, it helps maintain model reliability and supports better decision-making in production systems.
+
+## 🤝 Contributors
+- **Dashkrat Srivastava** ([@DashkratSrivastava](https://github.com/DashkratSrivastava))
